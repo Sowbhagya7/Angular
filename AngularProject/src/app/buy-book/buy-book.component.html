@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div >
+    <h2>Enter the fields</h2>
+    
+    <label class="form-label" for="form12">Book ID</label>
+    <input type="text" id="form12" class="form-control"  [(ngModel)]="buybook.bookid"/>
+    <label class="form-label" for="form12">Name</label>
+    <input type="text" id="form12" class="form-control"  [(ngModel)]="buybook.name"/>
+
+    <label class="form-label" for="author">EmailID</label>
+    <input type="text" id="author" class="form-control" [(ngModel)]="buybook.emailid"/>
+    
+    
+    <br>
+    <button (click)='BuyBook()' class='btn btn-primary'> BuyBook</button>
+    
+</div>
+</body>
+</html>

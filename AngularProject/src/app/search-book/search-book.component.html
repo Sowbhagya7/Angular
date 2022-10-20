@@ -1,0 +1,17 @@
+<html>
+  <body></body>
+<div class="container">
+  <div>
+    Category : <input type="text" name="Category" [(ngModel)]="category" ><br>
+    authorname : <input type="text" name="Author" [(ngModel)]="authorname"><br>
+    Price: <input type="text" name="Price" [(ngModel)]="price"><br>
+    Publisher : <input type="text" name="publisher" [(ngModel)]="publisher"><br>
+  </div>
+  <button (click)=SearchBook() class="btn btn-success">
+    Search
+  </button>
+ 
+</div><br><br>
+<app-search-response *ngIf="books" [book]="books"></app-search-response> 
+</html>
+<!-- <app-searchbookresponse [dataNeeded]=books></app-searchbookresponse> -->

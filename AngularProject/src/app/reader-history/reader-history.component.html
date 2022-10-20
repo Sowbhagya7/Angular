@@ -1,0 +1,14 @@
+<html>
+  <body></body>
+<div class="container">
+  <div>
+    emailid : <input type="text" name="emailid" [(ngModel)]="emailid" ><br>
+    
+  </div>
+  <button (click)=ReaderHistory() class="btn btn-success">
+    Search
+  </button>
+ 
+</div><br><br>
+<app-reader-form *ngIf="books" [buybooks]="books"></app-reader-form> 
+</html>
